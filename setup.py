@@ -1,22 +1,24 @@
-from setuptools import setup, find_namespace_packages
+from setuptools import setup, find_packages, find_namespace_packages
 
 # Prepend pycocoevalcap to package names
-package_names = ['pycocoevalcap.'+p for p in find_namespace_packages()]
+# package_names = ['pycocoevalcap.'+p for p in find_namespace_packages()]
 
 with open("README.md", "r") as fh:
     readme = fh.read()
 
+
 setup(
-    name='pycocoevalcap',
-    version=1.2,
-    maintainer='salaniz',
-    description="MS-COCO Caption Evaluation for Python 3",
+    name='pycc3mevalcap',
+    version='0.0.1',
+    maintainer='dhansmair',
+    description="Conceptual Captions 3M Caption Evaluation for Python 3",
     long_description=readme,
     long_description_content_type="text/markdown",
-    url="https://github.com/salaniz/pycocoevalcap",
-    packages=['pycocoevalcap']+package_names,
-    package_dir={'pycocoevalcap': '.'},
+    url="https://github.com/dhansmair/pycc3mevalcap",
+    packages=find_packages(),
     package_data={'': ['*.jar', '*.gz']},
-    install_requires=['pycocotools>=2.0.2'],
+    install_requires=[
+        'pycocoevalcap'
+        ],
     python_requires='>=3'
 )
