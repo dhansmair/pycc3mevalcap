@@ -8,8 +8,8 @@ import json
 
 
 CURRENT_DIR = dirname(abspath(__file__))
-COCO_REFERENCES = CURRENT_DIR + '/captions_val2014.json'
-CC3M_REFERENCES = CURRENT_DIR + '/Validation_GCC-1.1.0-Validation.tsv'
+COCO_REFERENCES = CURRENT_DIR + '/data/captions_val2014.json'
+CC3M_REFERENCES = CURRENT_DIR + '/data/Validation_GCC-1.1.0-Validation.tsv'
 
 
 def load_coco_references(path=COCO_REFERENCES) -> Dict[str, List[str]]:
