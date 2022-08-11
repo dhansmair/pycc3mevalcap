@@ -7,7 +7,9 @@ Fork of salaniz/pycocoevalcap, with additional support of image captioning metri
 ## Installation ##
 To install pycc3mevalcap and all dependencies, run:
 ```
-pip install pycc3mevalcap
+git clone https://github.com/dhansmair/pycc3mevalcap.git
+cd pycc3mevalcap
+pip install .
 ```
 
 ## Usage ##
